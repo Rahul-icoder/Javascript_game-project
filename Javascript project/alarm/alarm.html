@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <style>
+        .wrapper{
+            height: 100vh;
+        }
+        .wrapper::before{
+            content: "";
+            background-image: linear-gradient(57deg, #00c6a7 ,#1e4d92);
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 73%, 0% 100%) ;
+        }
+        .time {
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(purple,#854fee);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        span{
+            font-size: 1.3rem;
+            font-weight: 900;
+            margin: 10px 14px;
+        }
+        #Time{
+            margin: 4px;
+            width: 500px;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: 2px solid black;
+            border-radius: 20px;
+            color:black;
+            outline: none;
+        }
+
+        #btn{
+            margin: 16px 16px;
+            /* width: 120px; */
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 8px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: tomato;
+            cursor: pointer;
+        }
+        #format{
+            margin: 2px 16px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="wrapper">
+        <div class="time">
+            <span>Enter Time To Set Alarm</span>
+            <label for="Time">
+                <input type="text" name="time" id="Time" placeholder="Enter the time to set alarm">
+                <p id="format">Date and time in 2020-07-12 13:24:10</p>
+            </label>
+        </div>
+        <button type="submit" id="btn">Set Alarm</button>
+    </form>
+    <script src="alarm.js"></script>
+</body>
+
+</html>

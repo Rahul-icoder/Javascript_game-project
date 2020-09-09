@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image: linear-gradient(grey, white);
+}
+.ludo_png1,
+.ludo_png2 {
+  width: 160px;
+  height: 160px;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: purple;
+  border: 2px solid black;
+  margin: 10px 500px;
+}
+.Ludo {
+  display: flex;
+  justify-content: center;
+}
+.player1,
+.player2 {
+  margin: 10px 50px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  font-size: 2rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.btn,
+.btn2 {
+  padding: 8px 30px;
+  margin: 16px 4px;
+  font-size: 1rem;
+  color: black;
+  background-color: burlywood;
+}
+.win_name {
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0px 550px;
+  color: tomato;
+  font-weight: 700;
+}
+.number1,
+.number2 {
+  display: flex;
+  font-size: 1.6rem;
+  margin: 10px;
+  justify-content: center;
+}
+.name1,
+.name2,
+.count2,
+.count1 {
+  margin: 0px 10px;
+  font-weight: 700;
+  color: red;
+}
+.nam1,
+.nam2 {
+  text-transform: uppercase;
+  color: purple;
+  font-weight: 700;
+}
